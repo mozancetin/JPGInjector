@@ -4,12 +4,12 @@ import io
 class Injector:
 
     @staticmethod
-    def HideString(path, text):
+    def HideString(injectionPath, text):
         with open(path, "ab") as f:
             f.write(str.encode(text))
 
     @staticmethod
-    def GetString(path):
+    def GetString(injectionPath):
         with open(path, "rb") as f:
             content = f.read()
             offset = content.index(bytes.fromhex('FFD9'))
@@ -18,7 +18,7 @@ class Injector:
         return text
 
     @staticmethod
-    def HidePhoto(targetPath, injectionPath):
+    def HidePhoto(pngPath, injectionPath):
         img = PIL.Image.open(targetPath)
         byte_arr = io.BytesIO()
         img.save(byte_arr, format='PNG')
