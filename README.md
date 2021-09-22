@@ -3,7 +3,7 @@ injector for injecting text, png and exe into a jpg file with python
 
 This static class allows us to place text, png photos and exe on jpg photos. There are no discernible differences in the JPG photo apart from the size.
 
-NOTE: JPGs injected with this program cannot be restored with this program. So if you are going to inject to an important JPG photo, make sure you have a copy of the photo.
+**NOTE: JPGs injected with this program cannot be restored with this program. So if you are going to inject to an important JPG photo, make sure you have a copy of the photo.**
 
 # Usage
 
