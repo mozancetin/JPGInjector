@@ -5,6 +5,9 @@ This static class allows you to place text, png photos and exe on jpg photos. Th
 
 **NOTE: JPGs injected with this program cannot be restored with this program. So if you are going to inject to an important JPG photo, make sure you have a copy of the photo.**
 
+# Requires
+- PIL
+
 # Usage
 
 ```python
